@@ -4,6 +4,7 @@ import re
 from fpdf import FPDF
 import tempfile
 import uuid
+import os  # Fix: required for os.path.join()
 
 st.set_page_config(page_title="Download Resume", layout="centered")
 st.title("📄 Download Your ATS Ready Resume")
